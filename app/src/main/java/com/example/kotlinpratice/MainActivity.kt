@@ -65,6 +65,24 @@ class MainActivity : AppCompatActivity() {
             toString()
         }
         println(UseWith)
+
+
+
+        var hh = 0
+        val c1 = hh.add(2)
+        println(c1)
+
+
+
+
+        val myClass = MyClass<Int>()
+        val result12 = myClass.method(123)
+        println(result12)
+
+        val myClass1 = MyClass_1()
+        val result13 = myClass1.method(1234)
+        println(result13)
+
     }
     fun plus(num1:Int,num2:Int):Int{
         return num1+num2
@@ -77,6 +95,9 @@ class MainActivity : AppCompatActivity() {
         val result = operation(num1,num2)
         return result
     }
-
+    fun Int.add(b1:Int):Int{
+        var c = 0
+        return this + b1
+    }
 
 }
